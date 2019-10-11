@@ -1,5 +1,11 @@
 # vue-image-upload
 
+[Vue Image Upload Made Easy](https://www.youtube.com/watch?v=VqnJwh6E9ak)  
+[Firebase Cloud Functions - Creating a REST Endpoint with Cloud Functions](https://www.youtube.com/watch?v=qZ1EFnFOGvE)  
+
+# vue-cli
+
+
 `# vue create vue-image-upload`  
 `# merge`  
 
@@ -17,6 +23,8 @@ Vue CLI v3.2.3
 
 `$ cd vue-image-upload`  
 `$ npm run serve`  
+
+`$ npm i --save axios`
 
 ## Project setup
 ```
