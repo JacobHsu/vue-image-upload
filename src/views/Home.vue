@@ -7,6 +7,7 @@
       ref="fileInput">
     <button @click="$refs.fileInput.click()">Pick File</button>
     <button @click="onUpload">Upload</button>
+    <vue2Dropzone msg="Welcome to vue2-dropzone"/>
     <HelloWorld msg="Welcome to Your Vue.js App"/>
   </div>
 </template>
@@ -14,6 +15,7 @@
 <script>
 // @ is an alias to /src
 import HelloWorld from '@/components/HelloWorld.vue'
+import vue2Dropzone from '@/components/vue2Dropzone.vue'
 import axios from 'axios'
 
 export default {
@@ -24,7 +26,8 @@ export default {
     }
   },
   components: {
-    HelloWorld
+    HelloWorld,
+    vue2Dropzone
   },
   methods: {
     onFileSelected(event) {

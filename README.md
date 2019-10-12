@@ -2,6 +2,10 @@
 
 [Vue Image Upload Made Easy](https://www.youtube.com/watch?v=VqnJwh6E9ak)  
 [Firebase Cloud Functions - Creating a REST Endpoint with Cloud Functions](https://www.youtube.com/watch?v=qZ1EFnFOGvE)  
+`npm install vue2-dropzone`
+
+[File Uploader With Vue and Dropzone](https://medium.com/practicaldesign/fileuploader-with-vue-273b64e61609)  
+https://codesandbox.io/s/l7mk774r17  
 
 # vue-cli
 
