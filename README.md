@@ -11,11 +11,26 @@ https://codesandbox.io/s/l7mk774r17
 ## Upload Files with Vue and Express
 
 [Upload Files with Vue and Express #01: Vue Upload Form](https://www.youtube.com/watch?v=GXe_JpBQLTQ)  
+Upload Files with Vue and Express [#02: Handle File Upload with Express Web Server](https://www.youtube.com/watch?v=98YUIBPJWMo)    
 
 index.html  head  
 [Bulma](https://bulma.io/) is a free, open source CSS framework based on Flexbox and built with Sass.
 font-awesome  
-HTML <form> [enctype](https://www.w3school.com.cn/tags/att_form_enctype.asp  ) 
+HTML <form> [enctype](https://www.w3school.com.cn/tags/att_form_enctype.asp)
+
+[5 分鐘快速了解 FontAwesome 5](https://pjchender.blogspot.com/2017/12/5-fontawesome-5.html)  
+
+## node upload api
+
+`$ cd node_upload_api`  
+`$ yarn init -y`  
+`$ yarn add express nodemon`  
+`$ yarn add multer`  
+
+Usage `$ yarn start`
+
+[Multer](https://github.com/expressjs/multer) is a node.js middleware for handling multipart/form-data , which is primarily used for uploading files.
+
 
 # vue-cli
 
@@ -24,9 +39,9 @@ HTML <form> [enctype](https://www.w3school.com.cn/tags/att_form_enctype.asp  )
 `# merge`  
 
 Vue CLI v3.2.3
-┌────────────────────────────┐
-│  Update available: 3.12.0  │
-└────────────────────────────┘
+┌────────────────────────────┐  
+│  Update available: 3.12.0  │  
+└────────────────────────────┘  
 ? Please pick a preset: Manually select features
 ? Check the features needed for your project: Babel, Router, Vuex, Linter
 ? Use history mode for router? (Requires proper server setup for index fallback in production) Yes

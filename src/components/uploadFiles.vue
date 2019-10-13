@@ -2,6 +2,10 @@
   <div class="container">
     <h1>{{ msg }}</h1>
     <form @submit.prevent="sendFile" enctype="multipart/form-data">
+
+        <div v-if="message" :class="`message ${error ?'is-danger':'is-success'}`">
+          <div class="message-body">{{message}}</div>
+        </div>
         <div class="field">
             <div class="file is-boxed is-primary">
                 <label class="file-label">
@@ -45,7 +49,9 @@ export default {
   name: 'uploadFiles',
   data() {
     return {
-      file: ""
+      file: "",
+      message: "",
+      error: false
     }
   },
   props: {
@@ -53,15 +59,22 @@ export default {
   },
   methods: {
     selectFile() {
-        this.file = this.$refs.file.files[0]
+        this.file = this.$refs.file.files[0];
+        this.error = false;
+        this.message = "";
     },
     async sendFile() {
         const formData = new FormData();
         formData.append('file', this.file)
         try {
-            await axios.post('/upload', formData)
+            await axios.post('/upload', formData);
+            this.message = "File has been uploaded";
+            this.file = "";
+            this.error = false;
         } catch(err) {
             console.log(123, err)
+            this.message = "Something went wrong";
+            this.error = true;
         }
        
     }
