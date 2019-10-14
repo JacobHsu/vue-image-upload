@@ -1,5 +1,6 @@
 <template>
   <div class="home">
+    <Dropzone/>
     <uploadFiles msg="Welcome to uploadFiles"/>
 
     <input 
@@ -20,7 +21,8 @@
 import HelloWorld from '@/components/HelloWorld.vue'
 import vue2Dropzone from '@/components/vue2Dropzone.vue'
 import uploadFiles from '@/components/uploadFiles.vue'
- 
+import Dropzone from '@/components/Dropzone.vue'
+
 import axios from 'axios'
 
 export default {
@@ -33,7 +35,8 @@ export default {
   components: {
     HelloWorld,
     vue2Dropzone,
-    uploadFiles
+    uploadFiles,
+    Dropzone
   },
   methods: {
     onFileSelected(event) {
