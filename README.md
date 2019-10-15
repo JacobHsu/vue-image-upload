@@ -20,6 +20,7 @@ font-awesome
 HTML <form> [enctype](https://www.w3school.com.cn/tags/att_form_enctype.asp)
 
 [5 分鐘快速了解 FontAwesome 5](https://pjchender.blogspot.com/2017/12/5-fontawesome-5.html)  
+[Image file upload using Vue.js and instant preview - JSFiddle](https://jsfiddle.net/mani04/5zyozvx8/)  
 
 ## node upload api
 
@@ -54,7 +55,13 @@ Vue CLI v3.2.3
 `$ cd vue-image-upload`  
 `$ npm run serve`  
 
-`$ npm i --save axios`
+`$ npm i --save axios`  
+
+`$ yarn serve`  
+
+### vue cli note
+
+[环境变量和模式](https://cli.vuejs.org/zh/guide/mode-and-env.html#在客户端侧代码中使用环境变量)  
 
 ## Project setup
 ```

@@ -14,6 +14,11 @@ export default new Router({
       component: Home
     },
     {
+      path: '/aws',
+      name: 'aws',
+      component: () => import('./views/Aws.vue')
+    },
+    {
       path: '/about',
       name: 'about',
       // route level code-splitting

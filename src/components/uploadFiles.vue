@@ -72,7 +72,6 @@ export default {
             this.file = "";
             this.error = false;
         } catch(err) {
-            console.log(123, err)
             this.message = "Something went wrong";
             this.error = true;
         }
