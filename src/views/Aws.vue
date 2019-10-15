@@ -1,8 +1,9 @@
 <template>
   <div class="s3">
     <h1>This s3 page</h1>
-
+    {{imageUrl}}
     <div class="dropzone">
+        
         <input 
         type="file" 
         class="input-file"
@@ -62,7 +63,7 @@ export default {
 
   },
   methods: {
-    onUpload() {
+    async onUpload() {
         const albumName = 'icon';
         const file = this.$refs.oneFileInput.files[0];
         var fileName = file.name;
@@ -79,7 +80,7 @@ export default {
 
         const albumBucketName = process.env.VUE_APP_S3_ALBUM_BUCKETNAME
         const s3 = new AWS.S3({params: {Bucket: albumBucketName}});
-        s3.upload({
+        let putObjectPromise = await s3.upload({
             Key: photoKey,
             Body: file,
             ContentType: 'image/png',
@@ -92,9 +93,10 @@ export default {
             console.log('s3 data--->',data)
             console.log('image url:', data.Location)
             
-        });
-
-
+        }).promise();
+        let location = putObjectPromise.Location
+        console.log('location',location )
+        this.imageUrl = location
 
     }
   }

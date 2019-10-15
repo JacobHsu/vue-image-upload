@@ -22,6 +22,11 @@ HTML <form> [enctype](https://www.w3school.com.cn/tags/att_form_enctype.asp)
 [5 分鐘快速了解 FontAwesome 5](https://pjchender.blogspot.com/2017/12/5-fontawesome-5.html)  
 [Image file upload using Vue.js and instant preview - JSFiddle](https://jsfiddle.net/mani04/5zyozvx8/)  
 
+
+## s3.upload
+
+[s3.upload.promise()](https://github.com/aws/aws-sdk-js/issues/1076)    
+
 ## node upload api
 
 `$ cd node_upload_api`  
