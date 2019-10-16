@@ -11,7 +11,8 @@ https://codesandbox.io/s/l7mk774r17
 ## Upload Files with Vue and Express
 
 [Upload Files with Vue and Express #01: Vue Upload Form](https://www.youtube.com/watch?v=GXe_JpBQLTQ)  
-Upload Files with Vue and Express [#02: Handle File Upload with Express Web Server](https://www.youtube.com/watch?v=98YUIBPJWMo)    
+Upload Files with Vue and Express [#02: Handle File Upload with Express Web Server](https://www.youtube.com/watch?v=98YUIBPJWMo) 
+Upload Files with Vue and Express: [#03. Validate File on Server and on Client](https://www.youtube.com/watch?v=sfqB6_cMDrI)   
 Upload Files with Vue and Express [#05: Dropzone and Upload Progress Bar](https://www.youtube.com/watch?v=-4BpqB0uHRs)  
 
 index.html  head  

@@ -1,7 +1,7 @@
 <template>
   <div class="home">
-    <!-- <Dropzone/>
-    <uploadFiles msg="Welcome to uploadFiles"/> -->
+    <!-- <Dropzone/>-->
+    <uploadFiles msg="Welcome to uploadFiles"/> 
 
     <input 
       style="display:none" 

@@ -59,9 +59,18 @@ export default {
   },
   methods: {
     selectFile() {
-        this.file = this.$refs.file.files[0];
-        this.error = false;
-        this.message = "";
+        const file = this.$refs.file.files[0];
+        const allowedTypes = ["image/jpeg","image/png","image/gif"];
+        const MAX_SIZE = 20000;
+        const tooLarge = file.size > MAX_SIZE;
+        if(allowedTypes.includes(file.type) && !tooLarge) {
+          this.file = file 
+          this.error = false;
+          this.message = "";
+        } else {
+          this.error = true;
+          this.message = tooLarge ? `Too large. Max size is ${MAX_SIZE/1000}kb` : "Only Images are allowed From vue"
+        }
     },
     async sendFile() {
         const formData = new FormData();
@@ -72,7 +81,7 @@ export default {
             this.file = "";
             this.error = false;
         } catch(err) {
-            this.message = "Something went wrong";
+            this.message = err.response.data.error;//"Something went wrong";
             this.error = true;
         }
        
