@@ -7,6 +7,10 @@
 [File Uploader With Vue and Dropzone](https://medium.com/practicaldesign/fileuploader-with-vue-273b64e61609)  
 https://codesandbox.io/s/l7mk774r17  
 
+[JS 前端處理檔案上傳之預覽、大小、尺寸、格式](https://coder.tw/?p=7397)  
+[Reading Image Sizes and Dimensions with Vue.js](https://www.raymondcamden.com/2019/06/13/reading-image-sizes-and-dimensions-with-vuejs)  
+[怎么 同步取得 fileReader onload 处理的数据](https://zhidao.baidu.com/question/2207479644034019788.html) 
+
 
 ## Upload Files with Vue and Express
 
@@ -22,6 +26,7 @@ HTML <form> [enctype](https://www.w3school.com.cn/tags/att_form_enctype.asp)
 
 [5 分鐘快速了解 FontAwesome 5](https://pjchender.blogspot.com/2017/12/5-fontawesome-5.html)  
 [Image file upload using Vue.js and instant preview - JSFiddle](https://jsfiddle.net/mani04/5zyozvx8/)  
+
 
 
 ## s3.upload

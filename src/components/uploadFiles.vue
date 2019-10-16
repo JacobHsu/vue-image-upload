@@ -71,6 +71,33 @@ export default {
           this.error = true;
           this.message = tooLarge ? `Too large. Max size is ${MAX_SIZE/1000}kb` : "Only Images are allowed From vue"
         }
+
+        function uploadFile(file) {
+            return new Promise(function(resolve, reject) {
+              let reader = new FileReader();
+              reader.readAsDataURL(file);
+              reader.onload = (e) => {
+                  let img = new Image();
+                  img.src = e.target.result;
+                  img.onload = function() {
+                    console.log(`the image dimensions are ${this.width}x${this.height}`)
+                    if(this.width <= 300 && this.height <= 300) {
+                        resolve(e.target.result)
+                    } else {
+                        reject('请上传 300 X 300 像素的PNG图档')
+                    }
+        
+                  }
+              }
+            })
+        }
+        uploadFile(file).then(function(result){
+            console.log('handle result',result)
+        }).catch(function(err){
+            console.log(err)
+            return alert(err); 
+        })
+
     },
     async sendFile() {
         const formData = new FormData();

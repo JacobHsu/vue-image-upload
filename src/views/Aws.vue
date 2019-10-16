@@ -72,10 +72,16 @@ export default {
 
           if (file) {
               var reader = new FileReader();
+              var img = new Image();
               reader.onload = (e) => {
                   this.imageData = e.target.result;
+                  img.src = e.target.result;
               }
               reader.readAsDataURL(file);
+
+              img.onload = function() {
+                  console.log(`the image dimensions are ${this.width}x${this.height}`);
+              }
           }
 
         const albumBucketName = process.env.VUE_APP_S3_ALBUM_BUCKETNAME
