@@ -11,7 +11,7 @@
                 <label class="file-label">
                     <input 
                         type="file"
-                        ref="file"
+                        ref="files"
                         @change="selectFile"
                         class="file-input"/>
                         <span class="file-cta">

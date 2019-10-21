@@ -74,6 +74,10 @@ Vue CLI v3.2.3
 
 [环境变量和模式](https://cli.vuejs.org/zh/guide/mode-and-env.html#在客户端侧代码中使用环境变量)  
 
+# References
+
+npm [lodash](https://www.npmjs.com/package/lodash)  
+
 ## Project setup
 ```
 npm install

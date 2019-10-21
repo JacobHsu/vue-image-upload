@@ -29,6 +29,11 @@ app.post('/upload',upload.single('file'),(req,res) =>{
     res.json({file:req.file})
 })
 
+// UploadMultipleFiles.vue: formData.append('file', this.file)
+app.post('/multipe',upload.array('files'),(req,res) =>{
+    res.json({file:req.files})
+})
+
 app.post('/dropzone',pureUpload.single('file'),(req,res) =>{
     res.json({file:req.file})
 })

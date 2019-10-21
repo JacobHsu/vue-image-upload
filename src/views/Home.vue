@@ -1,7 +1,8 @@
 <template>
   <div class="home">
-    <!-- <Dropzone/>-->
-    <uploadFiles msg="Welcome to uploadFiles"/> 
+    <Dropzone/>
+    <uploadFiles msg="Welcome to uploadFiles"/>
+    <uploadMultipleFiles msg="Welcome to uploadMultipleFiles"/>  
 
     <input 
       style="display:none" 
@@ -28,6 +29,7 @@
 import HelloWorld from '@/components/HelloWorld.vue'
 import vue2Dropzone from '@/components/vue2Dropzone.vue'
 import uploadFiles from '@/components/uploadFiles.vue'
+import uploadMultipleFiles from '@/components/UploadMultipleFiles.vue'
 import Dropzone from '@/components/Dropzone.vue'
 
 import axios from 'axios'
@@ -43,6 +45,7 @@ export default {
     HelloWorld,
     vue2Dropzone,
     uploadFiles,
+    uploadMultipleFiles,
     Dropzone
   },
   methods: {
